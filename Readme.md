@@ -2,7 +2,7 @@
 
 * Студент: [Дмитрий Эванс](https://up.htmlacademy.ru/htmlcss-individual/2/user/318101).
 * Наставник: [Ирина Малиновская](https://htmlacademy.ru/profile/irina-malinovskaya).
-* Сайт: [Сайт проекта Седона](https://hellniex1.github.io/318101-sedona-2/)
+* Сайт: [Сайт проекта Седона](https://hellniex1.github.io/318101-sedona-2/).
 
 ---
 
