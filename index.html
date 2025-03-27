@@ -9,7 +9,7 @@
 
   <body>
     <div class="wrapper">
-      <header class="page-header">
+      <header class="page-header" data-test="header">
         <nav class="navigation">
           <a class="navigation-logo" href="index.html">
             <img class="navigation-img" src="img/logo.svg" width="140" height="70"
@@ -28,26 +28,27 @@
           </ul>
           <ul class="navigation-list navigation-user">
             <li class="navigation-item">
-              <a class="navigation-link" href="#">
+              <a class="navigation-link navigation-link-search" href="#">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">
+              <a class="navigation-link navigation-link-favorit" href="#">
                 <span class="visually-hidden">Избранное</span>
+                <span class="notification-favorit">12</span>
               </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">
+              <a class="navigation-link header-button" href="#">
                 <span class="visually-hidden">Хочу сюда</span>
               </a>
             </li>
           </ul>
         </nav>
       </header>
-      <main class="main-index">
+      <main class="main-index" data-test="main">
         <h1 class="visually-hidden">Сайт поиска гостиниц "Седона"</h1>
-        <section class="welcome">
+        <section class="welcome" data-test="hero">
           <h2 class="visually-hidden">Добро пожаловать на сайт "Седона"</h2>
           <img class="welcome-logo" src="img/welcome.svg" width="458" height="352" alt="Добро пожаловать в Седону.">
         </section>
@@ -55,7 +56,7 @@
           <h2 class="slogan-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
           <p class="slogan-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         </section>
-        <section class="advantages">
+        <section class="advantages" data-test="advantages">
           <h2 class="visually-hidden">Преимущества</h2>
           <ul class="advantages-list">
             <li class="advantages-item advantage-item-blue">
@@ -87,37 +88,37 @@
           <h2 class="slogan-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
           <p class="slogan-description">Опытный персонал и качественное обслуживание!</p>
         </section>
-        <section class="infrastructure">
+        <section class="infrastructure" data-test="advantages">
           <h2 class="visually-hidden">Инфраструктура</h2>
           <ul class="infrastructure-list">
             <li class="infrastructure-item infrastructure-item-lightgray-icon">
               <h3 class="infrastructure-title infrastructure-title-lightgray-icon infrastructure-icon-house">Жильё</h3>
               <p class="infrastructure-description infrastructure-description-lightgray-icon">Рекомендуем пожить<br>в
-                настоящем
-                мотеле,<br>всё как в кино!</p>
+                настоящем мотеле,<br>всё как в кино!</p>
             </li>
             <li class="infrastructure-item infrastructure-item-white-icon">
               <h3 class="infrastructure-title infrastructure-title-white-icon infrastructure-icon-food">Еда</h3>
               <p class="infrastructure-description infrastructure-description-white-icon">Всегда заказывайте<br>топовый
-                фирменный
-                бургер,<br>вы не разочаруетесь!</p>
+                фирменный бургер,<br>вы не разочаруетесь!</p>
             </li>
             <li class="infrastructure-item infrastructure-lightgray-icon">
               <h3 class="infrastructure-title infrastructure-title-lightgray-icon infrastructure-icon-souvenirs">
                 Сувениры</h3>
               <p class="infrastructure-description infrastructure-description-lightgray-icon">Не только
-                китайского,<br>но и
-                настоящего местного<br>производства!</p>
+                китайского,<br>но и настоящего местного<br> производства!
+              </p>
             </li>
           </ul>
         </section>
-        <section class="search">
+        <section class="search" data-test="search">
           <h2 class="search-title">Заинтересовались?</h2>
           <p class="search-description">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения
-            гостиниц в Седоне</p>
+            гостиниц в Седоне
+          </p>
           <a class="button button-search" href="#">Поиск гостиницы в седоне</a>
         </section>
-        <section class="subscription">
+        <!--Subscription block-->
+        <section class="subscription" data-test="subscribe">
           <h2 class="subscription-title">Подпишитесь на рассылку</h2>
           <p class="subscription-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
           <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -128,8 +129,9 @@
             <button class="button button-subscription" type="submit">Подписаться</button>
           </form>
         </section>
+        <!--Subscription block end-->
       </main>
-      <footer class="page-footer">
+      <footer class="page-footer" data-test="footer">
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a href="" class="footer-social-link">
