@@ -3,18 +3,17 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="styles/styles.css">
   <title>Каталог гостиниц Седоны</title>
 </head>
 
 <body>
-  <div class="page">
+  <div class="page__wrapper">
     <header class="header" data-test="header">
+      <a class="header__logo" href="index.html">
+        <img class="header__logo-img" src="images/logo.svg" width="140" height="70" alt="Логотип Седона">
+      </a>
       <nav class="nav">
-        <a class="nav__logo" href="index.html">
-          <img class="nav__logo-img" src="images/logo.svg" width="140" height="70" alt="Логотип Седона">
-        </a>
-
         <ul class="nav__list">
           <li class="nav__item">
             <a class="nav__link" href="index.html">Главная</a>
@@ -197,7 +196,6 @@
               <p class="hotel__rating-value">Рейтинг: <span>8,5</span></p>
             </div>
           </li>
-
           <li class="hotel">
             <img class="hotel__image" src="images/catalog/mountains-and-rainbows.jpg" width="300" height="212" alt="Отель Villas at Poco Diablo - вид на горы и радугу">
             <a class="hotel__link" href="#">
@@ -220,7 +218,6 @@
               <p class="hotel__rating-value">Рейтинг: <span>9,2</span></p>
             </div>
           </li>
-
           <li class="hotel">
             <img class="hotel__image" src="images/catalog/mountains-and-blue-sky.jpg" width="300" height="212" alt="Отель Desert Quail Inn - вид на горы и голубое небо">
             <a class="hotel__link" href="#">
@@ -243,7 +240,6 @@
               <p class="hotel__rating-value">Рейтинг: <span>6,9</span></p>
             </div>
           </li>
-
           <li class="hotel">
             <img class="hotel__image" src="images/catalog/mountains-at-night.jpg" width="300" height="212" alt="Отель GreenTree Inn - вид на горы ночью">
             <a class="hotel__link" href="#">
@@ -331,5 +327,4 @@
     </footer>
   </div>
 </body>
-
 </html>

@@ -3,18 +3,17 @@
 
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>HTML Academy: Сайт поиска гостиниц Седона</title>
   </head>
 
   <body>
-    <div class="page">
+    <div class="page__wrapper">
       <header class="header" data-test="header">
+        <a class="header__logo" href="index.html" aria-current="page">
+          <img class="header__logo-img" src="images/logo.svg" width="140" height="70" alt="Логотип Седона">
+        </a>
         <nav class="nav">
-          <a class="nav__logo" href="index.html" aria-current="page">
-            <img class="nav__logo-img" src="images/logo.svg" width="140" height="70" alt="Логотип Седона">
-          </a>
-
           <ul class="nav__list">
             <li class="nav__item">
               <a class="nav__link nav__link--current" href="index.html" aria-current="page">Главная</a>
@@ -70,22 +69,18 @@
                 <img class="advantages__image" src="images/sedona.jpg" width="800" height="384" alt="Город Седона">
               </figure>
             </li>
-
             <li class="advantages__item advantages__item--light">
               <h3 class="advantages__item-title">Небольшая<br>площадь</h3>
               <p class="advantages__item-text">Все достопримечательности находятся очень близко</p>
             </li>
-
             <li class="advantages__item advantages__item--dark">
               <h3 class="advantages__item-title">Красивая<br>дорога</h3>
               <p class="advantages__item-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </li>
-
             <li class="advantages__item advantages__item--light">
               <h3 class="advantages__item-title">Мало<br>туристов</h3>
               <p class="advantages__item-text">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
-
             <li class="advantages__item advantages__item--highlight">
               <figure>
                 <img class="advantages__image" src="images/devil-bridge.jpg" width="800" height="384"
@@ -108,12 +103,10 @@
               <h3 class="services__item-title">Жильё</h3>
               <p class="services__item-text">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
             </li>
-
             <li class="services__item services__item--food">
               <h3 class="services__item-title">Еда</h3>
               <p class="services__item-text">Всегда заказывайте<br>топовый фирменный бургер,<br>вы не разочаруетесь!</p>
             </li>
-
             <li class="services__item services__item--gift">
               <h3 class="services__item-title">Сувениры</h3>
               <p class="services__item-text">Не только китайского,<br> но и настоящего местного<br>производства!</p>
@@ -168,5 +161,4 @@
       </footer>
     </div>
   </body>
-
 </html>
