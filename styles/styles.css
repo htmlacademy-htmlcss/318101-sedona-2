@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: "PT Sans";
   src: url(../fonts/ptsans-400.woff2) format(woff2);
@@ -16,37 +15,37 @@
 }
 
 :root {
-    /* ======= BASE COLORS ======= */
-    --color-black: rgba(0, 0, 0, 1);           /* #000000 */
-    --color-black-30: rgba(0, 0, 0, 0.3);      /* #0000004D */
-    --color-black-20: rgba(0, 0, 0, 0.2);
-    --color-white: rgba(255, 255, 255, 1);     /* #FFFFFF */
-    --color-white-30: rgba(255, 255, 255, 0.3); /* #FFFFFF4D */
-    --color-white-60: rgba(255, 255, 255, 0.6); /* #FFFFFF99 */
-    --color-dark-gray: rgba(51, 51, 51, 1);     /* #333333 */
-    --color-light-gray: rgba(229, 229, 229, 1); /* #E5E5E5 */
-    --color-pale-gray: rgba(242, 242, 242, 1);  /* #F2F2F2 */
+  /* ======= BASE COLORS ======= */
+  --color-black: rgba(0, 0, 0, 1); /* #000000 */
+  --color-black-30: rgba(0, 0, 0, 0.3); /* #0000004D */
+  --color-black-20: rgba(0, 0, 0, 0.2);
+  --color-white: rgba(255, 255, 255, 1); /* #FFFFFF */
+  --color-white-30: rgba(255, 255, 255, 0.3); /* #FFFFFF4D */
+  --color-white-60: rgba(255, 255, 255, 0.6); /* #FFFFFF99 */
+  --color-dark-gray: rgba(51, 51, 51, 1); /* #333333 */
+  --color-light-gray: rgba(229, 229, 229, 1); /* #E5E5E5 */
+  --color-pale-gray: rgba(242, 242, 242, 1); /* #F2F2F2 */
 
-    /* Brown palette */
-    --color-brown: rgba(117, 97, 87, 1);       /* #756157 */
-    --color-brown-dark: rgba(97, 80, 72, 1);   /* #615048 */
-    --color-brown-30: rgba(117, 97, 87, 0.3);  /* #7561574D */
+  /* Brown palette */
+  --color-brown: rgba(117, 97, 87, 1); /* #756157 */
+  --color-brown-dark: rgba(97, 80, 72, 1); /* #615048 */
+  --color-brown-30: rgba(117, 97, 87, 0.3); /* #7561574D */
 
-    /* Blue palette */
-    --color-blue: rgba(130, 179, 211, 1);      /* #82B3D3 */
-    --color-blue-dark: rgba(104, 162, 202, 1); /* #68A2CA */
-    --color-blue-light: rgba(131, 179, 211, 1); /* #83B3D3 */
-    --color-blue-gray: rgba(63, 94, 114, 1);   /* #3F5E72 */
-    --color-blue-20: rgba(131, 179, 211, 0.2); /* #83B3D333 */
-    --color-blue-30: rgba(104, 162, 202, 0.3); /* #68A2CA4D */
-    --color-blue-10: rgba(131, 179, 211, 0.12); /* #83B3D31F */
+  /* Blue palette */
+  --color-blue: rgba(130, 179, 211, 1); /* #82B3D3 */
+  --color-blue-dark: rgba(104, 162, 202, 1); /* #68A2CA */
+  --color-blue-light: rgba(131, 179, 211, 1); /* #83B3D3 */
+  --color-blue-gray: rgba(63, 94, 114, 1); /* #3F5E72 */
+  --color-blue-20: rgba(131, 179, 211, 0.2); /* #83B3D333 */
+  --color-blue-30: rgba(104, 162, 202, 0.3); /* #68A2CA4D */
+  --color-blue-10: rgba(131, 179, 211, 0.12); /* #83B3D31F */
 
-    /* Green palette */
-    --color-green: rgba(125, 181, 79, 1);      /* #7DB54F */
-    --color-green-dark: rgba(108, 158, 66, 1); /* #6C9E42 */
+  /* Green palette */
+  --color-green: rgba(125, 181, 79, 1); /* #7DB54F */
+  --color-green-dark: rgba(108, 158, 66, 1); /* #6C9E42 */
 
-    /* Red palette */
-    --color-red: rgba(255, 87, 87, 1);         /* #FF5757 */
+  /* Red palette */
+  --color-red: rgba(255, 87, 87, 1); /* #FF5757 */
 
   /* ======= SEMANTIC COLORS ======= */
   /* Text */
