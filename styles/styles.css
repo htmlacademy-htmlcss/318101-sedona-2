@@ -51,7 +51,7 @@
   /* Text */
   --text-primary: var(--color-black);
   --text-secondary: var(--color-dark-gray);
-  --text-on-dark: var(--color-white);
+  --text-additional: var(--color-white);
   --text-hover: var(--color-brown);
   --text-active: var(--color-brown-30);
 
@@ -60,10 +60,12 @@
   --bg-default: var(--color-white);
   --bg-primary: var(--color-blue);
   --bg-overlay: var(--color-black-30);
+  --bg-overlay-20: var(--color-black-20);
   --bg-transparent-light: var(--color-white-30);
   --bg-transparent-medium: var(--color-white-60);
   --bg-secondary-10: var(--color-blue-10);
   --bg-secondary-20: var(--color-blue-20);
+  --bg-secondary-30: var(--color-blue-30);
 
   /* Buttons */
   --btn-primary: var(--color-brown);
@@ -89,6 +91,57 @@
   --icon-secondary-active: var(--color-blue-30);
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button {
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 4px;
+  border: none;
+  padding: 8px 50px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--text-additional);
+}
+
+.button--primary {
+  background-color: var(--btn-primary);
+}
+
+.button--secondary {
+  background-color: var(--btn-secondary);
+}
+
+.button--accent {
+  background-color: var(--btn-accent);
+}
+
+.button--details,
+.button--favorite {
+}
+
+.button--reset {
+  background-color: transparent;
+}
+
+.nav__user-button .button--primary {
+  width: 160px;
+}
+
+.subscribe__button .button--secondary {
+}
+
 body {
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
@@ -107,5 +160,168 @@ body {
   min-height: 100%;
   max-width: 1200px;
   background-color: var(--bg-default);
-  box-shadow: 0 0 15px var(--color-black-20);
+  box-shadow: 0 0 15px var(--bg-overlay-20);
+}
+
+.header {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.nav__list,
+.nav__user-list,
+.social,
+.advantages__list,
+.services__list,
+.breadcrumbs,
+.filter__list,
+.hotels,
+.pagination__list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.advantages__list,
+.services__list {
+  text-align: center;
+}
+
+.nav__link,
+.nav__user-link {
+  font-weight: 700;
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+.hero {
+  min-height: 485px;
+  background-image: url(/images/index-hero.jpg);
+  background-color: var(--bg-secondary-30);
+  background-size: 100% auto, cover;
+  background-position: bottom, center;
+  background-repeat: no-repeat;
+}
+
+.hero__image {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.advantages {
+}
+
+.advantages__title,
+.services__title,
+.search__title,
+.subscribe__title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.advantages__intro,
+.services__intro,
+.search__text,
+.subscribe__text {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.advantages__item-title,
+.services__item-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.advantages__item-text,
+.services__item-text,
+.advantages__intro,
+.services__intro,
+.search__text {
+  color: var(--text-secondary);
+}
+
+.advantages__content,
+.advantages__content .advantages__item-text,
+.subscribe {
+  color: var(--text-additional);
+  background-color: var(--bg-primary);
+}
+
+.advantages__content .advantages__item-text {
+  color: ;
+}
+
+.advantages__item--light,
+.services__item--gift,
+.services__item--house {
+  background-color: var(--bg-secondary-10);
+}
+
+.advantages__item--dark {
+  background-color: var(--bg-secondary-20);
+}
+
+.search {
+  text-align: center;
+  margin: 96px 304px;
+}
+
+.subscribe {
+  background-image: url(/images/subscribe.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.subscribe__input {
+  display: flex;
+  padding: 12px 20px;
+  align-items: center;
+  gap: 260px;
+}
+
+.footer__phone {
+  color: var(--text-primary);
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.page-header__title {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 78px;
+  color: var(--text-additional);
+}
+
+.breadcrumbs__link {
+  color: var(--text-additional);
+  text-decoration: none;
+}
+
+.hero-inner {
+  padding: 70px;
+  padding-top: 35px;
+  color: var(--text-additional);
+  background-image: url(/images/catalog-hero.jpg);
+  background-color: var(--bg-secondary-30);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.filter__group {
+  border: none;
 }

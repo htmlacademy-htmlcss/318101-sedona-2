@@ -40,31 +40,27 @@
             </a>
           </li>
           <li class="nav__user-item">
-            <a class="nav__user-link nav__user-link--button" href="#">
-              <span>Хочу сюда</span>
-            </a>
+            <a class="button nav__user-button button--primary" href="#">Хочу сюда</a>
           </li>
         </ul>
       </nav>
     </header>
 
     <main class="main main--inner" data-test="main">
-      <div class="page-header">
-        <h1 class="page-header__title">Гостиницы Седоны</h1>
-
-        <ul class="breadcrumbs">
-          <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link" href="index.html">
-              <span class="visually-hidden">Главная</span>
-            </a>
-          </li>
-          <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link" href="catalog.html">Гостиницы</a>
-          </li>
-        </ul>
-      </div>
-
-      <section class="catalog">
+      <div class="hero-inner">
+        <div class="page-header">
+          <h1 class="page-header__title">Гостиницы Седоны</h1>
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="index.html">
+                <span class="visually-hidden">Главная</span>
+              </a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="catalog.html">Гостиницы</a>
+            </li>
+          </ul>
+        </div>
         <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
 
         <form class="filter" action="https://echo.htmlacademy.ru/" method="get" data-test="filter">
@@ -95,54 +91,56 @@
           <fieldset class="filter__group">
             <legend class="filter__title">Тип жилья:</legend>
             <ul class="filter__list">
-              <li class="filter__item">
-                <label class="control">
-                  <input class="control__input" type="radio" name="type-of-housing" value="hotel" checked>
-                  <span class="control__label">Гостиница</span>
-                </label>
-              </li>
-              <li class="filter__item">
-                <label class="control">
-                  <input class="control__input" type="radio" name="type-of-housing" value="motel">
-                  <span class="control__label">Мотель</span>
-                </label>
-              </li>
-              <li class="filter__item">
-                <label class="control">
-                  <input class="control__input" type="radio" name="type-of-housing" value="flat">
-                  <span class="control__label">Апартаменты</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
+                <li class="filter__item">
+                  <label class="control">
+                    <input class="control__input" type="radio" name="type-of-housing" value="hotel" checked>
+                    <span class="control__label">Гостиница</span>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="control">
+                    <input class="control__input" type="radio" name="type-of-housing" value="motel">
+                    <span class="control__label">Мотель</span>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="control">
+                    <input class="control__input" type="radio" name="type-of-housing" value="flat">
+                    <span class="control__label">Апартаменты</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
 
-          <fieldset class="filter__group">
-            <legend class="filter__title">Стоимость, ₽:</legend>
-            <div class="range">
-              <div class="range__inputs">
-                <label class="range__label">
-                  <span class="range__text">от</span>
-                  <input class="range__input" type="number" value="0" name="min-price" placeholder="от">
-                </label>
-                <label class="range__label">
-                  <span class="range__text">до</span>
-                  <input class="range__input" type="number" value="9000" name="max-price" placeholder="до">
-                </label>
+            <fieldset class="filter__group">
+              <legend class="filter__title">Стоимость, ₽:</legend>
+              <div class="range">
+                <div class="range__inputs">
+                  <label class="range__label">
+                    <span class="range__text">от</span>
+                    <input class="range__input" type="number" value="0" name="min-price" placeholder="от">
+                  </label>
+                  <label class="range__label">
+                    <span class="range__text">до</span>
+                    <input class="range__input" type="number" value="9000" name="max-price" placeholder="до">
+                  </label>
+                </div>
+                <div class="range__slider">
+                  <input class="range__slider-input" type="range" min="0" max="12000" step="10" value="0">
+                  <input class="range__slider-input" type="range" min="0" max="12000" step="10" value="9000">
+                </div>
               </div>
-              <div class="range__slider">
-                <input class="range__slider-input" type="range" min="0" max="12000" step="10" value="0">
-                <input class="range__slider-input" type="range" min="0" max="12000" step="10" value="9000">
-              </div>
+            </fieldset>
+
+            <div class="filter__buttons">
+              <button class="button filter__button button--secondary" type="submit">Применить</button>
+              <button class="button filter__button " type="reset">Сбросить</button>
             </div>
-          </fieldset>
+          </form>
+      </div>
 
-          <div class="filter__buttons">
-            <button class="button button--filter" type="submit">Применить</button>
-            <button class="button button--reset" type="reset">Сбросить</button>
-          </div>
-        </form>
-
-        <section class="catalog__controls">
+      <section class="catalog">
+        <div class="catalog__controls">
           <h2 class="catalog__count">Найдено гостиниц: <span>38</span></h2>
 
           <div class="sort">
@@ -172,7 +170,7 @@
               </li>
             </ul>
           </div>
-        </section>
+        </div>
 
         <ul class="hotels">
           <li class="hotel">
@@ -185,8 +183,8 @@
               <p class="hotel__price">От <span class="hotel__price-value">4000</span> ₽</p>
             </div>
             <div class="hotel__actions">
-              <a class="button button--details" href="#">Подробнее</a>
-              <button class="button button--favorite" type="button">
+              <a class="button button--details button--primary" href="#">Подробнее</a>
+              <button class="button button--favorite button--secondary" type="button">
                 <span class="button__text">В избранное</span>
               </button>
             </div>
@@ -207,9 +205,9 @@
               <p class="hotel__price">От <span class="hotel__price-value">5000</span> ₽</p>
             </div>
             <div class="hotel__actions">
-              <a class="button button--details" href="#">Подробнее</a>
-              <button class="button button--favorite" type="button">
-                <span class="button__text">В избранное</span>
+              <a class="button button--details button--primary" href="#">Подробнее</a>
+              <button class="button button--favorite button--accent" type="button">
+                <span class="button__text">В избранном</span>
               </button>
             </div>
             <div class="hotel__rating">
@@ -229,8 +227,8 @@
               <p class="hotel__price">От <span class="hotel__price-value">2500</span> ₽</p>
             </div>
             <div class="hotel__actions">
-              <a class="button button--details" href="#">Подробнее</a>
-              <button class="button button--favorite" type="button">
+              <a class="button button--details button--primary" href="#">Подробнее</a>
+              <button class="button button--favorite button--secondary" type="button">
                 <span class="button__text">В избранное</span>
               </button>
             </div>
@@ -251,8 +249,8 @@
               <p class="hotel__price">От <span class="hotel__price-value">1500</span> ₽</p>
             </div>
             <div class="hotel__actions">
-              <a class="button button--details" href="#">Подробнее</a>
-              <button class="button button--favorite" type="button">
+              <a class="button button--details button--primary" href="#">Подробнее</a>
+              <button class="button button--favorite button--secondary" type="button">
                 <span class="button__text">В избранное</span>
               </button>
             </div>
@@ -290,13 +288,13 @@
       </section>
 
       <section class="subscribe subscribe--inner">
-        <h2 class="subscribe__title">Подпишитесь на рассылку</h2>
-        <p class="subscribe__text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <h2 class="subscribe__title subscribe__title--inner">Подпишитесь на рассылку</h2>
+        <p class="subscribe__text">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
 
         <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="subscribe-email">Email</label>
           <input class="subscribe__input" type="email" id="subscribe-email" name="email" placeholder="Ваш e-mail" required>
-          <button class="button button--subscribe" type="submit">Подписаться</button>
+          <button class="button subscribe__button button--secondary" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
