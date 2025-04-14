@@ -199,7 +199,7 @@ body {
 .hero {
   align-items: center;
   background-color: var(--bg-secondary-30);
-  background-image: url(../images/index-hero.jpg);
+  background-image: url("../images/index-hero.jpg");
   background-position: bottom, center;
   background-repeat: no-repeat;
   background-size: 100% auto, cover;
@@ -283,7 +283,7 @@ body {
 }
 
 .subscribe {
-  background-image: url(../images/subscribe.jpg);
+  background-image: url("../images/subscribe.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -319,7 +319,7 @@ body {
   padding: 70px;
   padding-top: 35px;
   color: var(--text-additional);
-  background-image: url(../images/catalog-hero.jpg);
+  background-image: url("../images/catalog-hero.jpg");
   background-color: var(--bg-secondary-30);
   background-size: cover;
   background-repeat: no-repeat;
