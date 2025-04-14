@@ -46,49 +46,6 @@
 
   /* Red palette */
   --color-red: rgba(255, 87, 87, 1); /* #FF5757 */
-
-  /* ======= SEMANTIC COLORS ======= */
-  /* Text */
-  --text-primary: var(--color-black);
-  --text-secondary: var(--color-dark-gray);
-  --text-additional: var(--color-white);
-  --text-hover: var(--color-brown);
-  --text-active: var(--color-brown-30);
-
-  /* Backgrounds */
-  --bg-page: var(--color-pale-gray);
-  --bg-default: var(--color-white);
-  --bg-primary: var(--color-blue);
-  --bg-overlay: var(--color-black-30);
-  --bg-overlay-20: var(--color-black-20);
-  --bg-transparent-light: var(--color-white-30);
-  --bg-transparent-medium: var(--color-white-60);
-  --bg-secondary-10: var(--color-blue-10);
-  --bg-secondary-20: var(--color-blue-20);
-  --bg-secondary-30: var(--color-blue-30);
-
-  /* Buttons */
-  --btn-primary: var(--color-brown);
-  --btn-secondary: var(--color-blue);
-  --btn-accent: var(--color-green);
-  --btn-disabled: var(--color-light-gray);
-  --btn-primary-hover: var(--color-brown-dark);
-  --btn-secondary-hover: var(--color-blue-dark);
-  --btn-accent-hover: var(--color-green-dark);
-
-  /* Forms */
-  --form-text: var(--color-blue-gray);
-  --form-border: var(--color-light-gray);
-  --form-bg: var(--color-pale-gray);
-
-  /* Icons */
-  --icon-default: var(--color-black);
-  --icon-secondary: var(--color-blue-light);
-  --icon-accent: var(--color-green);
-  --icon-hover: var(--color-brown);
-  --icon-active: var(--color-brown-30);
-  --icon-secondary-hover: var(--color-blue-dark);
-  --icon-secondary-active: var(--color-blue-30);
 }
 
 .visually-hidden {
@@ -102,6 +59,11 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.list--unstyled {
+  padding-left: 0;
+  list-style: none;
 }
 
 .button {
@@ -118,31 +80,64 @@
 }
 
 .button--primary {
-  color: var(--text-additional);
-  background-color: var(--btn-primary);
+  color: var(--color-white);
+  background-color: var(--color-brown);
 }
 
 .button--secondary {
-  color: var(--text-additional);
-  background-color: var(--btn-secondary);
+  color: var(--color-white);
+  background-color: var(--color-blue);
 }
 
 .button--accent {
-  color: var(--text-additional);
-  background-color: var(--btn-accent);
+  color: var(--color-white);
+  background-color: var(--color-green);
 }
 
 .button--reset {
-  color: var(--text-additional);
+  color: var(--color-white);
   background-color: transparent;
 }
 
-.button--details,
-.button--favorite,
-.nav__user-button,
-.filter__button {
+.button--xs {
   font-size: 16px;
   line-height: 20px;
+}
+
+.button--sm {
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.title-xl {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.title-lg {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.title-sm {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.text-lead {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.text-secondary {
+  color: var(--color-dark-gray);
 }
 
 body {
@@ -152,8 +147,8 @@ body {
   font-weight: 400;
   line-height: 21px;
   margin: 0;
-  color: var(--color-primary);
-  background-color: var(--bg-page);
+  color: var(--color-black);
+  background-color: var(--color-pale-gray);
 }
 
 .page__wrapper {
@@ -162,27 +157,13 @@ body {
   flex-direction: column;
   min-height: 100%;
   max-width: 1200px;
-  background-color: var(--bg-default);
-  box-shadow: 0 0 15px var(--bg-overlay-20);
+  background-color: var(--color-white);
+  box-shadow: 0 0 15px var(--color-black-20);
 }
 
 .header {
   font-size: 20px;
   line-height: 24px;
-}
-
-.nav__list,
-.nav__user-list,
-.social,
-.advantages__list,
-.services__list,
-.breadcrumbs,
-.filter__list,
-.view__list,
-.hotels,
-.pagination__list {
-  padding-left: 0;
-  list-style: none;
 }
 
 .advantages__list,
@@ -193,13 +174,14 @@ body {
 .nav__link,
 .nav__user-link {
   font-weight: 700;
-  color: var(--text-primary);
+  color: var(--color-black);
   text-decoration: none;
 }
 
 .hero {
-  background-color: var(--bg-secondary-30);
-  background-image: url("../images/divider.svg"), url("../images/index-hero.jpg");
+  background-color: var(--color-blue-30);
+  background-image: url("../images/divider.svg"),
+    url("../images/index-hero.jpg");
   background-position: bottom, center;
   background-repeat: no-repeat;
   background-size: 100% auto, cover;
@@ -216,61 +198,21 @@ body {
   object-fit: contain;
 }
 
-.advantages__title,
-.services__title,
-.search__title,
-.subscribe__title {
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 36px;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.advantages__intro,
-.services__intro,
-.search__text,
-.subscribe__text {
-  font-size: 22px;
-  line-height: 26px;
-  text-align: center;
-}
-
-.advantages__item-title,
-.services__item-title {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 28px;
-  text-transform: uppercase;
-}
-
-.advantages__item-text,
-.services__item-text,
-.advantages__intro,
-.services__intro,
-.search__text {
-  color: var(--text-secondary);
-}
-
 .advantages__content,
 .advantages__content .advantages__item-text,
 .subscribe {
-  color: var(--text-additional);
-  background-color: var(--bg-primary);
-}
-
-.advantages__content .advantages__item-text {
-  color: ;
+  color: var(--color-white);
+  background-color: var(--color-blue);
 }
 
 .advantages__item--light,
 .services__item--gift,
 .services__item--house {
-  background-color: var(--bg-secondary-10);
+  background-color: var(--color-blue-10);
 }
 
 .advantages__item--dark {
-  background-color: var(--bg-secondary-20);
+  background-color: var(--color-blue-20);
 }
 
 .search {
@@ -292,7 +234,7 @@ body {
 }
 
 .footer__phone {
-  color: var(--text-primary);
+  color: var(--color-black);
   font-size: 40px;
   line-height: 40px;
   text-transform: uppercase;
@@ -303,11 +245,11 @@ body {
   font-size: 60px;
   font-weight: 700;
   line-height: 78px;
-  color: var(--text-additional);
+  color: var(--color-white);
 }
 
 .breadcrumbs__link {
-  color: var(--text-additional);
+  color: var(--color-white);
   text-decoration: none;
 }
 
@@ -318,9 +260,9 @@ body {
 .hero-inner {
   padding: 70px;
   padding-top: 35px;
-  color: var(--text-additional);
+  color: var(--color-white);
   background-image: url("../images/catalog-hero.jpg");
-  background-color: var(--bg-secondary-30);
+  background-color: var(--color-blue-30);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -336,38 +278,20 @@ body {
   border: none;
 }
 
-.filter__title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-}
-
 .control__label {
   line-height: 23px;
 }
 
-.hotels {
-  color: var(--text-secondary);
-}
-
 .hotel__link {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 28px;
   text-decoration: none;
-  color: var(--text-primary);
+  color: var(--color-black);
 }
 
 .hotel__rating-value {
-  background-color: var(--bg-page);
-}
-
-.pagination__link {
-font-size: 20px;
-line-height: 36px;
+  background-color: var(--color-pale-gray);
 }
 
 .pagination__link--current {
-  color: var(--text-primary);
-  background-color: var(--bg-page);
+  color: var(--color-black);
+  background-color: var(--color-pale-gray);
 }

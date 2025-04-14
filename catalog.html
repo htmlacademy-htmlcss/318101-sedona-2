@@ -15,7 +15,7 @@
           <img class="header__logo-img" src="images/logo.svg" width="140" height="70" alt="Логотип Седона">
         </a>
         <nav class="nav">
-          <ul class="nav__list">
+          <ul class="nav__list list--unstyled">
             <li class="nav__item">
               <a class="nav__link" href="index.html">Главная</a>
             </li>
@@ -27,7 +27,7 @@
             </li>
           </ul>
 
-          <ul class="nav__user-list">
+          <ul class="nav__user-list list--unstyled">
             <li class="nav__user-item">
               <a class="nav__user-link nav__user-link--search" href="#">
                 <span class="visually-hidden">Поиск</span>
@@ -40,7 +40,7 @@
               </a>
             </li>
             <li class="nav__user-item">
-              <a class="button nav__user-button button--primary" href="#">Хочу сюда</a>
+              <a class="button button--xs button--primary" href="#">Хочу сюда</a>
             </li>
           </ul>
         </nav>
@@ -50,7 +50,7 @@
         <div class="hero-inner">
           <div class="page-header">
             <h1 class="page-header__title">Гостиницы Седоны</h1>
-            <ul class="breadcrumbs">
+            <ul class="breadcrumbs list--unstyled">
               <li class="breadcrumbs__item">
                 <a class="breadcrumbs__link" href="index.html">
                   <span class="visually-hidden">Главная</span>
@@ -65,8 +65,8 @@
 
           <form class="filter" action="https://echo.htmlacademy.ru/" method="get" data-test="filter">
             <fieldset class="filter__group">
-              <legend class="filter__title">Инфраструктура:</legend>
-              <ul class="filter__list">
+              <legend class="filter__title title-sm">Инфраструктура:</legend>
+              <ul class="filter__list list--unstyled">
                 <li class="filter__item">
                   <label class="control">
                     <input class="control__input" type="checkbox" name="swimming-pool" checked>
@@ -89,8 +89,8 @@
             </fieldset>
 
             <fieldset class="filter__group">
-              <legend class="filter__title">Тип жилья:</legend>
-              <ul class="filter__list">
+              <legend class="filter__title title-sm">Тип жилья:</legend>
+              <ul class="filter__list list--unstyled">
                 <li class="filter__item">
                   <label class="control">
                     <input class="control__input" type="radio" name="type-of-housing" value="hotel" checked>
@@ -113,7 +113,7 @@
             </fieldset>
 
             <fieldset class="filter__group">
-              <legend class="filter__title">Стоимость, ₽:</legend>
+              <legend class="filter__title title-sm">Стоимость, ₽:</legend>
               <div class="range">
                 <div class="range__inputs">
                   <label class="range__label">
@@ -133,8 +133,8 @@
             </fieldset>
 
             <div class="filter__buttons">
-              <button class="button filter__button button--secondary" type="submit">Применить</button>
-              <button class="button filter__button button--reset" type="reset">Сбросить</button>
+              <button class="button button--xs button--secondary" type="submit">Применить</button>
+              <button class="button button--xs button--reset" type="reset">Сбросить</button>
             </div>
           </form>
         </div>
@@ -152,7 +152,7 @@
             </div>
 
             <div class="view">
-              <ul class="view__list">
+              <ul class="view__list list--unstyled">
                 <li class="view__item">
                   <a class="view__link view__link--tile view__link--active" href="#">
                     <span class="visually-hidden">Плитка</span>
@@ -172,17 +172,17 @@
             </div>
           </div>
 
-          <ul class="hotels">
+          <ul class="hotels list--unstyled text-secondary">
             <li class="hotel">
               <img class="hotel__image" src="images/catalog/starry-sky.jpg" width="300" height="212"
                 alt="Отель Amara Resort & Spa - вид на звёздное небо">
-              <a class="hotel__link" href="#">
+              <a class="hotel__link title-lg" href="#">
                 <h3 class="hotel__title">Amara Resort & Spa</h3>
               </a>
               <p class="hotel__type">Гостиница</p>
               <p class="hotel__price">От <span class="hotel__price-value">4000</span> ₽</p>
-              <a class="button button--details button--primary" href="#">Подробнее</a>
-              <button class="button button--favorite button--secondary" type="button">
+              <a class="button button--xs button--primary" href="#">Подробнее</a>
+              <button class="button button--xs button--secondary" type="button">
                 <span class="button__text">В избранное</span>
               </button>
               <div class="stars stars--4">
@@ -193,13 +193,13 @@
             <li class="hotel">
               <img class="hotel__image" src="images/catalog/mountains-and-rainbows.jpg" width="300" height="212"
                 alt="Отель Villas at Poco Diablo - вид на горы и радугу">
-              <a class="hotel__link" href="#">
+              <a class="hotel__link title-lg" href="#">
                 <h3 class="hotel__title">Villas at Poco Diablo</h3>
               </a>
               <p class="hotel__type">Гостиница</p>
               <p class="hotel__price">От <span class="hotel__price-value">5000</span> ₽</p>
-              <a class="button button--details button--primary" href="#">Подробнее</a>
-              <button class="button button--favorite button--accent" type="button">
+              <a class="button button--xs button--primary" href="#">Подробнее</a>
+              <button class="button button--xs button--accent" type="button">
                 <span class="button__text">В избранном</span>
               </button>
               <div class="stars stars--4">
@@ -210,13 +210,13 @@
             <li class="hotel">
               <img class="hotel__image" src="images/catalog/mountains-and-blue-sky.jpg" width="300" height="212"
                 alt="Отель Desert Quail Inn - вид на горы и голубое небо">
-              <a class="hotel__link" href="#">
+              <a class="hotel__link title-lg" href="#">
                 <h3 class="hotel__title">Desert Quail Inn</h3>
               </a>
               <p class="hotel__type">Гостиница</p>
               <p class="hotel__price">От <span class="hotel__price-value">2500</span> ₽</p>
-              <a class="button button--details button--primary" href="#">Подробнее</a>
-              <button class="button button--favorite button--secondary" type="button">
+              <a class="button button--xs button--primary" href="#">Подробнее</a>
+              <button class="button button--xs button--secondary" type="button">
                 <span class="button__text">В избранное</span>
               </button>
               <div class="stars stars--3">
@@ -227,13 +227,13 @@
             <li class="hotel">
               <img class="hotel__image" src="images/catalog/mountains-at-night.jpg" width="300" height="212"
                 alt="Отель GreenTree Inn - вид на горы ночью">
-              <a class="hotel__link" href="#">
+              <a class="hotel__link title-lg" href="#">
                 <h3 class="hotel__title">GreenTree Inn</h3>
               </a>
               <p class="hotel__type">Гостиница</p>
               <p class="hotel__price">От <span class="hotel__price-value">1500</span> ₽</p>
-              <a class="button button--details button--primary" href="#">Подробнее</a>
-              <button class="button button--favorite button--secondary" type="button">
+              <a class="button button--xs button--primary" href="#">Подробнее</a>
+              <button class="button button--xs button--secondary" type="button">
                 <span class="button__text">В избранное</span>
               </button>
               <div class="stars stars--2">
@@ -244,44 +244,44 @@
           </ul>
 
           <div class="pagination">
-            <ul class="pagination__list">
+            <ul class="pagination__list list--unstyled">
               <li class="pagination__item">
-                <a class="pagination__link button pagination__link--current" href="#">1</a>
+                <a class="button--sm button pagination__link--current" href="#">1</a>
               </li>
               <li class="pagination__item">
-                <a class="pagination__link button button--secondary" href="#">2</a>
+                <a class="button--sm button button--secondary" href="#">2</a>
               </li>
               <li class="pagination__item">
-                <a class="pagination__link button button--secondary" href="#">3</a>
+                <a class="button--sm button button--secondary" href="#">3</a>
               </li>
               <li class="pagination__item">
-                <a class="pagination__link button button--secondary" href="#">4</a>
+                <a class="button--sm button button--secondary" href="#">4</a>
               </li>
               <li class="pagination__item">
-                <span class="pagination__ellipsis button">...</span>
+                <span class="pagination__ellipsis button--sm button">...</span>
               </li>
               <li class="pagination__item">
-                <a class="pagination__link button button--secondary" href="#">10</a>
+                <a class="button--sm button button--secondary" href="#">10</a>
               </li>
             </ul>
           </div>
         </section>
 
         <section class="subscribe__inner">
-          <h2 class="subscribe__title subscribe__title--inner">Подпишитесь на рассылку</h2>
-          <p class="subscribe__text">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
+          <h2 class="subscribe__title subscribe__title--inner title-xl">Подпишитесь на рассылку</h2>
+          <p class="subscribe__text text-lead">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
 
           <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="subscribe-email">Email</label>
             <input class="subscribe__input" type="email" id="subscribe-email" name="email" placeholder="Ваш e-mail"
               required>
-            <button class="button subscribe__button button--secondary" type="submit">Подписаться</button>
+            <button class="button button--sm button--secondary" type="submit">Подписаться</button>
           </form>
         </section>
       </main>
 
       <footer class="footer">
-        <ul class="social">
+        <ul class="social list--unstyled">
           <li class="social__item">
             <a class="social__link social__link--vk" href="#">
               <span class="visually-hidden">ВКонтакте</span>
