@@ -199,7 +199,7 @@ body {
 .hero {
   align-items: center;
   background-color: var(--bg-secondary-30);
-  background-image: url("../images/index-hero.jpg");
+  background-image: url("../images/divider.svg"), url("../images/index-hero.jpg");
   background-position: bottom, center;
   background-repeat: no-repeat;
   background-size: 100% auto, cover;
