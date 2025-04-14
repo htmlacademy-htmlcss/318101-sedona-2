@@ -361,3 +361,13 @@ body {
 .hotel__rating-value {
   background-color: var(--bg-page);
 }
+
+.pagination__link {
+font-size: 20px;
+line-height: 36px;
+}
+
+.pagination__link--current {
+  color: var(--text-primary);
+  background-color: var(--bg-page);
+}
