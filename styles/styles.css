@@ -105,6 +105,7 @@
 }
 
 .button {
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   border-radius: 4px;
@@ -113,6 +114,7 @@
   text-align: center;
   text-decoration: none;
   color: var(--text-additional);
+  cursor: pointer;
 }
 
 .button--primary {
@@ -127,23 +129,23 @@
   background-color: var(--btn-accent);
 }
 
-.button--details,
-.button--favorite {
-}
-
 .button--reset {
   background-color: transparent;
 }
 
-.nav__user-button .button--primary {
-  width: 160px;
+.nav__user-button {
 }
 
-.subscribe__button .button--secondary {
+.button--details,
+.button--favorite,
+.nav__user-button,
+.filter__button {
+  font-size: 16px;
+  line-height: 20px;
 }
 
 body {
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-size: 18px;
   font-weight: 400;
@@ -175,6 +177,7 @@ body {
 .services__list,
 .breadcrumbs,
 .filter__list,
+.view__list,
 .hotels,
 .pagination__list {
   padding-left: 0;
@@ -194,12 +197,15 @@ body {
 }
 
 .hero {
-  min-height: 485px;
-  background-image: url(/images/index-hero.jpg);
+  align-items: center;
   background-color: var(--bg-secondary-30);
-  background-size: 100% auto, cover;
+  background-image: url(../images/index-hero.jpg);
   background-position: bottom, center;
   background-repeat: no-repeat;
+  background-size: 100% auto, cover;
+  display: flex;
+  justify-content: center;
+  min-height: 485px;
 }
 
 .hero__image {
@@ -212,9 +218,6 @@ body {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-}
-
-.advantages {
 }
 
 .advantages__title,
@@ -280,7 +283,7 @@ body {
 }
 
 .subscribe {
-  background-image: url(/images/subscribe.jpg);
+  background-image: url(../images/subscribe.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -316,12 +319,27 @@ body {
   padding: 70px;
   padding-top: 35px;
   color: var(--text-additional);
-  background-image: url(/images/catalog-hero.jpg);
+  background-image: url(../images/catalog-hero.jpg);
   background-color: var(--bg-secondary-30);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
+.catalog__count {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
 .filter__group {
   border: none;
+}
+
+.hotel__link {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-decoration: none;
+  color: var(--text-primary);
 }
