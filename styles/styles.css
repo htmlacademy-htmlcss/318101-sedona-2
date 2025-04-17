@@ -61,52 +61,61 @@
   overflow: hidden;
 }
 
-.list--unstyled {
+.list-unstyled {
   padding-left: 0;
   list-style: none;
 }
 
 .button {
   display: inline-block;
+  box-sizing: border-box;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   border-radius: 4px;
   border: none;
-  padding: 8px 50px;
+  padding: 8px 8px;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
 }
 
-.button--primary {
+.button-primary {
   color: var(--color-white);
   background-color: var(--color-brown);
 }
 
-.button--secondary {
-  color: var(--color-white);
-  background-color: var(--color-blue);
-}
-
-.button--accent {
+.button-accent {
   color: var(--color-white);
   background-color: var(--color-green);
 }
 
-.button--reset {
+.button-reset {
   color: var(--color-white);
   background-color: transparent;
 }
 
-.button--xs {
+.button-xs {
   font-size: 16px;
   line-height: 20px;
 }
 
-.button--sm {
+.button-sm {
   font-size: 20px;
   line-height: 36px;
+}
+
+.bg-secondary {
+  color: var(--color-white);
+  background-color: var(--color-blue);
+}
+
+.bg-light-blue {
+  background-color: var(--color-blue-10);
+}
+
+.bg-dark-blue {
+  background-color: var(--color-blue-20);
 }
 
 .title-xl {
@@ -162,20 +171,54 @@ body {
 }
 
 .header {
-  font-size: 20px;
-  line-height: 24px;
+  display: flex;
+  padding-inline: 70px;
+  column-gap: 30px;
+  height: 64px;
 }
 
-.advantages__list,
-.services__list {
-  text-align: center;
+.header__logo {
+  display: flex;
+  align-items: start;
+  flex-shrink: 0;
+  margin-bottom: -6px;
+  margin-right: -2px;
+  z-index: 1;
 }
 
-.nav__link,
-.nav__user-link {
-  font-weight: 700;
+.nav {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  gap: 16px;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.nav__link {
+  display: flex;
+  padding: 20px 16px;
   color: var(--color-black);
   text-decoration: none;
+}
+
+.nav__badge {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 10px;
+}
+
+.header__button {
+  width: 160px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
 }
 
 .hero {
@@ -188,8 +231,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 51px;
-  padding-bottom: 82px;
+  padding-block: 51px 82px;
 }
 
 .hero__image {
@@ -198,21 +240,57 @@ body {
   object-fit: contain;
 }
 
-.advantages__content,
-.advantages__content .advantages__item-text,
-.subscribe {
-  color: var(--color-white);
-  background-color: var(--color-blue);
+
+.advantages-titles {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  padding-block: 69px;
 }
 
-.advantages__item--light,
-.services__item--gift,
-.services__item--house {
-  background-color: var(--color-blue-10);
+.services-titles {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding-block: 64px;
 }
 
-.advantages__item--dark {
-  background-color: var(--color-blue-20);
+.advantages__list,
+.services__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages__item-highlight {
+display: flex;
+}
+
+.advantages__image {
+  height: auto;
+}
+
+.advantages__content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: center;
+  text-align: center;
+  padding: 103px 85px;
+  gap: 10px;
+  width: 400px;
+}
+
+.services__item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 85px;
+  gap: 10px;
+  width: 400px;
 }
 
 .search {
@@ -220,10 +298,22 @@ body {
   margin: 96px 304px;
 }
 
+.search__button {
+  width: 376px;
+}
+
 .subscribe {
+  display: flex;
+  flex-direction: column;
   background-image: url("../images/subscribe.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  padding: 96px 304px;
+}
+
+.subscribe__form {
+  display: flex;
+
 }
 
 .subscribe__input {
@@ -283,6 +373,7 @@ body {
 }
 
 .hotel__link {
+  text-transform: none;
   text-decoration: none;
   color: var(--color-black);
 }
@@ -291,7 +382,7 @@ body {
   background-color: var(--color-pale-gray);
 }
 
-.pagination__link--current {
+.pagination__link-current {
   color: var(--color-black);
   background-color: var(--color-pale-gray);
 }

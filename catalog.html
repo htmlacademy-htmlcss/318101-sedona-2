@@ -15,42 +15,42 @@
           <img class="header__logo-img" src="images/logo.svg" width="140" height="70" alt="Логотип Седона">
         </a>
         <nav class="nav">
-          <ul class="nav__list list--unstyled">
-            <li class="nav__item">
+          <ul class="nav__list list-unstyled">
+            <li class="nav__item title-sm">
               <a class="nav__link" href="index.html">Главная</a>
             </li>
-            <li class="nav__item">
+            <li class="nav__item title-sm">
               <a class="nav__link" href="about.html">О Седоне</a>
             </li>
-            <li class="nav__item">
-              <a class="nav__link nav__link--current" href="catalog.html" aria-current="page">Гостиницы</a>
+            <li class="nav__item title-sm">
+              <a class="nav__link nav__link-current" href="catalog.html" aria-current="page">Гостиницы</a>
             </li>
           </ul>
 
-          <ul class="nav__user-list list--unstyled">
-            <li class="nav__user-item">
-              <a class="nav__user-link nav__user-link--search" href="#">
+          <ul class="nav__list list-unstyled">
+            <li class="nav__item">
+              <a class="nav__link nav__link-search" href="#">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
-            <li class="nav__user-item">
-              <a class="nav__user-link nav__user-link--favorite" href="#">
+            <li class="nav__item">
+              <a class="nav__link nav__link-favorite" href="#">
                 <span class="visually-hidden">Избранное</span>
                 <span class="nav__badge">12</span>
               </a>
             </li>
-            <li class="nav__user-item">
-              <a class="button button--xs button--primary" href="#">Хочу сюда</a>
+            <li class="nav__item">
+              <a class="button button-xs button-primary" href="#">Хочу сюда</a>
             </li>
           </ul>
         </nav>
       </header>
 
-      <main class="main main--inner" data-test="main">
+      <main class="main main-inner" data-test="main">
         <div class="hero-inner">
           <div class="page-header">
             <h1 class="page-header__title">Гостиницы Седоны</h1>
-            <ul class="breadcrumbs list--unstyled">
+            <ul class="breadcrumbs list-unstyled">
               <li class="breadcrumbs__item">
                 <a class="breadcrumbs__link" href="index.html">
                   <span class="visually-hidden">Главная</span>
@@ -66,7 +66,7 @@
           <form class="filter" action="https://echo.htmlacademy.ru/" method="get" data-test="filter">
             <fieldset class="filter__group">
               <legend class="filter__title title-sm">Инфраструктура:</legend>
-              <ul class="filter__list list--unstyled">
+              <ul class="filter__list list-unstyled">
                 <li class="filter__item">
                   <label class="control">
                     <input class="control__input" type="checkbox" name="swimming-pool" checked>
@@ -90,7 +90,7 @@
 
             <fieldset class="filter__group">
               <legend class="filter__title title-sm">Тип жилья:</legend>
-              <ul class="filter__list list--unstyled">
+              <ul class="filter__list list-unstyled">
                 <li class="filter__item">
                   <label class="control">
                     <input class="control__input" type="radio" name="type-of-housing" value="hotel" checked>
@@ -133,8 +133,8 @@
             </fieldset>
 
             <div class="filter__buttons">
-              <button class="button button--xs button--secondary" type="submit">Применить</button>
-              <button class="button button--xs button--reset" type="reset">Сбросить</button>
+              <button class="button button-xs bg-secondary" type="submit">Применить</button>
+              <button class="button button-xs button-reset" type="reset">Сбросить</button>
             </div>
           </form>
         </div>
@@ -152,19 +152,19 @@
             </div>
 
             <div class="view">
-              <ul class="view__list list--unstyled">
+              <ul class="view__list list-unstyled">
                 <li class="view__item">
-                  <a class="view__link view__link--tile view__link--active" href="#">
+                  <a class="view__link view__link-tile view__link-active" href="#">
                     <span class="visually-hidden">Плитка</span>
                   </a>
                 </li>
                 <li class="view__item">
-                  <a class="view__link view__link--card" href="#">
+                  <a class="view__link view__link-card" href="#">
                     <span class="visually-hidden">Карточки</span>
                   </a>
                 </li>
                 <li class="view__item">
-                  <a class="view__link view__link--list" href="#">
+                  <a class="view__link view__link-list" href="#">
                     <span class="visually-hidden">Список</span>
                   </a>
                 </li>
@@ -172,7 +172,7 @@
             </div>
           </div>
 
-          <ul class="hotels list--unstyled text-secondary">
+          <ul class="hotels list-unstyled text-secondary">
             <li class="hotel">
               <img class="hotel__image" src="images/catalog/starry-sky.jpg" width="300" height="212"
                 alt="Отель Amara Resort & Spa - вид на звёздное небо">
@@ -181,11 +181,11 @@
               </a>
               <p class="hotel__type">Гостиница</p>
               <p class="hotel__price">От <span class="hotel__price-value">4000</span> ₽</p>
-              <a class="button button--xs button--primary" href="#">Подробнее</a>
-              <button class="button button--xs button--secondary" type="button">
+              <a class="button button-xs button-primary" href="#">Подробнее</a>
+              <button class="button button-xs bg-secondary" type="button">
                 <span class="button__text">В избранное</span>
               </button>
-              <div class="stars stars--4">
+              <div class="stars stars-4">
                 <span class="visually-hidden">4 звезды</span>
               </div>
               <p class="hotel__rating-value button">Рейтинг: <span>8,5</span></p>
@@ -198,11 +198,11 @@
               </a>
               <p class="hotel__type">Гостиница</p>
               <p class="hotel__price">От <span class="hotel__price-value">5000</span> ₽</p>
-              <a class="button button--xs button--primary" href="#">Подробнее</a>
-              <button class="button button--xs button--accent" type="button">
+              <a class="button button-xs button-primary" href="#">Подробнее</a>
+              <button class="button button-xs button-accent" type="button">
                 <span class="button__text">В избранном</span>
               </button>
-              <div class="stars stars--4">
+              <div class="stars stars-4">
                 <span class="visually-hidden">4 звезды</span>
               </div>
               <p class="hotel__rating-value button">Рейтинг: <span>9,2</span></p>
@@ -215,11 +215,11 @@
               </a>
               <p class="hotel__type">Гостиница</p>
               <p class="hotel__price">От <span class="hotel__price-value">2500</span> ₽</p>
-              <a class="button button--xs button--primary" href="#">Подробнее</a>
-              <button class="button button--xs button--secondary" type="button">
+              <a class="button button-xs button-primary" href="#">Подробнее</a>
+              <button class="button button-xs bg-secondary" type="button">
                 <span class="button__text">В избранное</span>
               </button>
-              <div class="stars stars--3">
+              <div class="stars stars-3">
                 <span class="visually-hidden">3 звезды</span>
               </div>
               <p class="hotel__rating-value button">Рейтинг: <span>6,9</span></p>
@@ -232,11 +232,11 @@
               </a>
               <p class="hotel__type">Гостиница</p>
               <p class="hotel__price">От <span class="hotel__price-value">1500</span> ₽</p>
-              <a class="button button--xs button--primary" href="#">Подробнее</a>
-              <button class="button button--xs button--secondary" type="button">
+              <a class="button button-xs button-primary" href="#">Подробнее</a>
+              <button class="button button-xs bg-secondary" type="button">
                 <span class="button__text">В избранное</span>
               </button>
-              <div class="stars stars--2">
+              <div class="stars stars-2">
                 <span class="visually-hidden">2 звезды</span>
               </div>
               <p class="hotel__rating-value button">Рейтинг: <span>5,0</span></p>
@@ -244,56 +244,56 @@
           </ul>
 
           <div class="pagination">
-            <ul class="pagination__list list--unstyled">
+            <ul class="pagination__list list-unstyled">
               <li class="pagination__item">
-                <a class="button--sm button pagination__link--current" href="#">1</a>
+                <a class="button-sm button pagination__link-current" href="#">1</a>
               </li>
               <li class="pagination__item">
-                <a class="button--sm button button--secondary" href="#">2</a>
+                <a class="button-sm button bg-secondary" href="#">2</a>
               </li>
               <li class="pagination__item">
-                <a class="button--sm button button--secondary" href="#">3</a>
+                <a class="button-sm button bg-secondary" href="#">3</a>
               </li>
               <li class="pagination__item">
-                <a class="button--sm button button--secondary" href="#">4</a>
+                <a class="button-sm button bg-secondary" href="#">4</a>
               </li>
               <li class="pagination__item">
-                <span class="pagination__ellipsis button--sm button">...</span>
+                <span class="pagination__ellipsis button-sm button">...</span>
               </li>
               <li class="pagination__item">
-                <a class="button--sm button button--secondary" href="#">10</a>
+                <a class="button-sm button bg-secondary" href="#">10</a>
               </li>
             </ul>
           </div>
         </section>
 
         <section class="subscribe__inner">
-          <h2 class="subscribe__title subscribe__title--inner title-xl">Подпишитесь на рассылку</h2>
+          <h2 class="subscribe__title subscribe__title-inner title-xl">Подпишитесь на рассылку</h2>
           <p class="subscribe__text text-lead">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
 
           <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="subscribe-email">Email</label>
             <input class="subscribe__input" type="email" id="subscribe-email" name="email" placeholder="Ваш e-mail"
               required>
-            <button class="button button--sm button--secondary" type="submit">Подписаться</button>
+            <button class="button button-sm bg-secondary" type="submit">Подписаться</button>
           </form>
         </section>
       </main>
 
       <footer class="footer">
-        <ul class="social list--unstyled">
+        <ul class="social list-unstyled">
           <li class="social__item">
-            <a class="social__link social__link--vk" href="#">
+            <a class="social__link social__link-vk" href="#">
               <span class="visually-hidden">ВКонтакте</span>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--tg" href="#">
+            <a class="social__link social__link-tg" href="#">
               <span class="visually-hidden">Телеграм</span>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--yt" href="#">
+            <a class="social__link social__link-yt" href="#">
               <span class="visually-hidden">YouTube</span>
             </a>
           </li>

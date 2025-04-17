@@ -15,32 +15,32 @@
           <img class="header__logo-img" src="images/logo.svg" width="140" height="70" alt="Логотип Седона">
         </a>
         <nav class="nav">
-          <ul class="nav__list list--unstyled">
-            <li class="nav__item">
-              <a class="nav__link nav__link--current" href="index.html" aria-current="page">Главная</a>
+          <ul class="nav__list list-unstyled">
+            <li class="nav__item title-sm">
+              <a class="nav__link nav__link-current" href="index.html" aria-current="page">Главная</a>
             </li>
-            <li class="nav__item">
+            <li class="nav__item title-sm">
               <a class="nav__link" href="about.html">О Седоне</a>
             </li>
-            <li class="nav__item">
+            <li class="nav__item title-sm">
               <a class="nav__link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
 
-          <ul class="nav__user-list list--unstyled">
-            <li class="nav__user-item">
-              <a class="nav__user-link nav__user-link--search" href="#">
+          <ul class="nav__list list-unstyled">
+            <li class="nav__item">
+              <a class="nav__link nav__link-search" href="#">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
-            <li class="nav__user-item">
-              <a class="nav__user-link nav__user-link--favorite" href="#">
+            <li class="nav__item">
+              <a class="nav__link nav__link-favorite" href="#">
                 <span class="visually-hidden">Избранное</span>
                 <span class="nav__badge">12</span>
               </a>
             </li>
-            <li class="nav__user-item">
-                <a class="button button--xs button--primary" href="#">Хочу сюда</a>
+            <li class="nav__item">
+                <a class="button header__button button-xs button-primary" href="#">Хочу сюда</a>
             </li>
           </ul>
         </nav>
@@ -55,58 +55,62 @@
         </section>
 
         <section class="advantages">
-          <h2 class="advantages__title title-xl">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
-          <p class="advantages__intro text-lead text-secondary">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+          <div class="advantages-titles">
+            <h2 class="advantages__title title-xl">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
+            <p class="advantages__intro text-lead text-secondary">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+          </div>
 
-          <ul class="advantages__list list--unstyled">
-            <li class="advantages__item advantages__item--highlight">
-              <div class="advantages__content">
+          <ul class="advantages__list list-unstyled">
+            <li class="advantages__item advantages__item-highlight">
+              <div class="advantages__content bg-secondary">
                 <h3 class="advantages__item-title title-lg">Настоящий<br>городок</h3>
-                <p class="advantages__item-text text-secondary">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                <p class="advantages__item-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
-              <figure>
-                <img class="advantages__image" src="images/sedona.jpg" width="800" height="384" alt="Город Седона">
-              </figure>
+
+                <img class="advantages__image" src="images/sedona.jpg" width="800" height="385" alt="Город Седона">
+
             </li>
-            <li class="advantages__item advantages__item--light">
+            <li class="advantages__item advantages__content bg-light-blue">
               <h3 class="advantages__item-title title-lg">Небольшая<br>площадь</h3>
               <p class="advantages__item-text text-secondary">Все достопримечательности<br>находятся очень близко</p>
             </li>
-            <li class="advantages__item advantages__item--dark">
+            <li class="advantages__item advantages__content bg-dark-blue">
               <h3 class="advantages__item-title title-lg">Красивая<br>дорога</h3>
               <p class="advantages__item-text text-secondary">Ехать в Седону из Лас-Вегаса<br>совсем не скучно!</p>
             </li>
-            <li class="advantages__item advantages__item--light">
+            <li class="advantages__item advantages__content bg-light-blue">
               <h3 class="advantages__item-title title-lg">Мало<br>туристов</h3>
               <p class="advantages__item-text text-secondary">Большинство едет в Гранд<br>Каньон и толпится там</p>
             </li>
-            <li class="advantages__item advantages__item--highlight">
-              <figure>
-                <img class="advantages__image" src="images/devil-bridge.jpg" width="800" height="384"
+            <li class="advantages__item advantages__item-highlight">
+
+                <img class="advantages__image" src="images/devil-bridge.jpg" width="800" height="385"
                   alt="Мост дьявола">
-              </figure>
-              <div class="advantages__content">
+
+              <div class="advantages__content bg-secondary">
                 <h3 class="advantages__item-title title-lg">Там есть<br>мост дьявола</h3>
-                <p class="advantages__item-text text-secondary">Да, по нему можно пройти!<br>Если вы осмелитесь,<br>разумеется</p>
+                <p class="advantages__item-text">Да, по нему можно пройти!<br>Если вы осмелитесь,<br>разумеется</p>
               </div>
             </li>
           </ul>
         </section>
 
         <section class="services">
-          <h2 class="services__title title-xl">Приезжайте в Седону отдохнуть<br> в комфорте и уюте!</h2>
-          <p class="services__intro text-lead text-secondary">Опытный персонал и качественное обслуживание!</p>
+          <div class="services-titles">
+            <h2 class="services__title title-xl">Приезжайте в Седону отдохнуть<br> в комфорте и уюте!</h2>
+            <p class="services__intro text-lead text-secondary">Опытный персонал и качественное обслуживание!</p>
+          </div>
 
-          <ul class="services__list list--unstyled">
-            <li class="services__item services__item--house">
+          <ul class="services__list list-unstyled">
+            <li class="services__item bg-light-blue">
               <h3 class="services__item-title title-lg">Жильё</h3>
               <p class="services__item-text text-secondary">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
             </li>
-            <li class="services__item services__item--food">
+            <li class="services__item services__item-food">
               <h3 class="services__item-title title-lg">Еда</h3>
               <p class="services__item-text text-secondary">Всегда заказывайте<br>топовый фирменный бургер,<br>вы не разочаруетесь!</p>
             </li>
-            <li class="services__item services__item--gift">
+            <li class="services__item bg-light-blue">
               <h3 class="services__item-title title-lg">Сувениры</h3>
               <p class="services__item-text text-secondary">Не только китайского,<br> но и настоящего местного<br>производства!</p>
             </li>
@@ -117,10 +121,10 @@
           <h2 class="search__title title-xl">Заинтересовались?</h2>
           <p class="search__text text-lead text-secondary">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в
             Седоне</p>
-          <a class="button button--sm button--primary" href="#">Поиск гостиницы в Седоне</a>
+          <a class="search__button button button-sm button-primary" href="#">Поиск гостиницы в Седоне</a>
         </section>
 
-        <section class="subscribe">
+        <section class="subscribe bg-secondary">
           <h2 class="subscribe__title title-xl">Подпишитесь на рассылку</h2>
           <p class="subscribe__text text-lead">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
 
@@ -128,25 +132,25 @@
             <label class="visually-hidden" for="user-email">Ваш email</label>
             <input class="subscribe__input" type="email" id="user-email" name="user-email" placeholder="Ваш e-mail"
               required>
-            <button class="button button--sm button--secondary" type="submit">Подписаться</button>
+            <button class="button button-sm bg-secondary" type="submit">Подписаться</button>
           </form>
         </section>
       </main>
 
       <footer class="footer" data-test="footer">
-        <ul class="social list--unstyled">
+        <ul class="social list-unstyled">
           <li class="social__item">
-            <a class="social__link social__link--vk" href="#">
+            <a class="social__link social__link-vk" href="#">
               <span class="visually-hidden">ВКонтакте</span>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--tg" href="#">
+            <a class="social__link social__link-tg" href="#">
               <span class="visually-hidden">Телеграм</span>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--yt" href="#">
+            <a class="social__link social__link-yt" href="#">
               <span class="visually-hidden">YouTube</span>
             </a>
           </li>
