@@ -62,7 +62,8 @@
 }
 
 .list-unstyled {
-  padding-left: 0;
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -137,6 +138,10 @@
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
+}
+
+.title-block {
+  margin-block: 0;
 }
 
 .text-lead {
@@ -219,6 +224,7 @@ body {
 .main {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 }
 
 .hero {
@@ -240,29 +246,44 @@ body {
   object-fit: contain;
 }
 
-
-.advantages-titles {
+.section-wrapper {
   display: flex;
   flex-direction: column;
-  row-gap: 25px;
-  padding-block: 69px;
-}
-
-.services-titles {
-  display: flex;
-  flex-direction: column;
-  row-gap: 20px;
-  padding-block: 64px;
+  align-items: center;
+  text-align: center;
 }
 
 .advantages__list,
 .services__list {
   display: flex;
   flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
-.advantages__item-highlight {
-display: flex;
+.titles__advantages {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  padding-block: 0 69px;
+}
+
+.advantages {
+  padding-block: 69px 0;
+}
+
+.services__titles {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding-block: 0 64px;
+}
+
+.services {
+  padding-block: 64px 0;
+}
+
+.advantages__item {
+  display: flex;
 }
 
 .advantages__image {
@@ -270,12 +291,9 @@ display: flex;
 }
 
 .advantages__content {
-  display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   box-sizing: border-box;
-  justify-content: center;
-  text-align: center;
   padding: 103px 85px;
   gap: 10px;
   width: 400px;
@@ -286,16 +304,19 @@ display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   box-sizing: border-box;
-  justify-content: center;
-  text-align: center;
   padding: 80px 85px;
   gap: 10px;
   width: 400px;
 }
 
 .search {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  margin: 96px 304px;
+  padding: 96px 304px;
 }
 
 .search__button {
@@ -313,7 +334,6 @@ display: flex;
 
 .subscribe__form {
   display: flex;
-
 }
 
 .subscribe__input {
