@@ -466,6 +466,7 @@ body {
   width: 143px;
   padding-block: 12px;
   border-radius: 4px;
+  border: none;
 }
 
 .range__input-from {
