@@ -49,7 +49,7 @@
       <main class="main main-inner" data-test="main">
         <div class="hero-inner">
           <div class="page-header">
-            <h1 class="page-header__title">Гостиницы Седоны</h1>
+            <h1 class="page-header__title title-xxl title-block">Гостиницы Седоны</h1>
             <ul class="breadcrumbs list-unstyled">
               <li class="breadcrumbs__item">
                 <a class="breadcrumbs__link" href="index.html">
@@ -118,11 +118,11 @@
                 <div class="range__inputs">
                   <label class="range__label">
                     <span class="range__text">от</span>
-                    <input class="range__input" type="number" value="0" name="min-price" placeholder="от">
+                    <input class="range__input range__input-from" type="number" value="0" name="min-price" placeholder="от">
                   </label>
                   <label class="range__label">
                     <span class="range__text">до</span>
-                    <input class="range__input" type="number" value="9000" name="max-price" placeholder="до">
+                    <input class="range__input range__input-to" type="number" value="9000" name="max-price" placeholder="до">
                   </label>
                 </div>
                 <div class="range__slider">
@@ -133,15 +133,15 @@
             </fieldset>
 
             <div class="filter__buttons">
-              <button class="button button-xs bg-secondary" type="submit">Применить</button>
-              <button class="button button-xs button-reset" type="reset">Сбросить</button>
+              <button class="filter__button-submit button button-xs bg-secondary" type="submit">Применить</button>
+              <button class="button button-xs filter__button-reset" type="reset">Сбросить</button>
             </div>
           </form>
         </div>
 
         <section class="catalog">
           <div class="catalog__controls">
-            <h2 class="catalog__count">Найдено гостиниц: <span>38</span></h2>
+            <h2 class="catalog__count title-xl">Найдено гостиниц: <span>38</span></h2>
 
             <div class="sort">
               <select class="sort__select" aria-label="Сортировка">
@@ -155,17 +155,17 @@
               <ul class="view__list list-unstyled">
                 <li class="view__item">
                   <a class="view__link view__link-tile view__link-active" href="#">
-                    <span class="visually-hidden">Плитка</span>
+                    <span class="visually-hidde">Плитка</span>
                   </a>
                 </li>
                 <li class="view__item">
                   <a class="view__link view__link-card" href="#">
-                    <span class="visually-hidden">Карточки</span>
+                    <span class="visually-hidde">Карточки</span>
                   </a>
                 </li>
                 <li class="view__item">
                   <a class="view__link view__link-list" href="#">
-                    <span class="visually-hidden">Список</span>
+                    <span class="visually-hidde">Список</span>
                   </a>
                 </li>
               </ul>
@@ -177,105 +177,121 @@
               <img class="hotel__image" src="images/catalog/starry-sky.jpg" width="300" height="212"
                 alt="Отель Amara Resort & Spa - вид на звёздное небо">
               <a class="hotel__link title-lg" href="#">
-                <h3 class="hotel__title">Amara Resort & Spa</h3>
+                <h3 class="hotel__title title-block">Amara Resort & Spa</h3>
               </a>
-              <p class="hotel__type">Гостиница</p>
-              <p class="hotel__price">От <span class="hotel__price-value">4000</span> ₽</p>
-              <a class="button button-xs button-primary" href="#">Подробнее</a>
-              <button class="button button-xs bg-secondary" type="button">
-                <span class="button__text">В избранное</span>
-              </button>
-              <div class="stars stars-4">
-                <span class="visually-hidden">4 звезды</span>
+              <div class="card-wrapper">
+                <p class="hotel__type title-block">Гостиница</p>
+                <p class="hotel__price title-block">От <span class="hotel__price-value">4000</span> ₽</p>
               </div>
-              <p class="hotel__rating-value button">Рейтинг: <span>8,5</span></p>
+              <div class="card-wrapper">
+                <a class="card__button button button-xs button-primary" href="#">Подробнее</a>
+                <button class="card__button button button-xs bg-secondary" type="button">
+                  <span class="button__text">В избранное</span>
+                </button>
+              </div>
+              <div class="card-wrapper stars stars-4">
+                <span class="visually-hidden">4 звезды</span>
+                <p class="hotel__rating-value button title-block">Рейтинг: <span>8,5</span></p>
+              </div>
             </li>
             <li class="hotel">
               <img class="hotel__image" src="images/catalog/mountains-and-rainbows.jpg" width="300" height="212"
                 alt="Отель Villas at Poco Diablo - вид на горы и радугу">
               <a class="hotel__link title-lg" href="#">
-                <h3 class="hotel__title">Villas at Poco Diablo</h3>
+                <h3 class="hotel__title title-block">Villas at Poco Diablo</h3>
               </a>
-              <p class="hotel__type">Гостиница</p>
-              <p class="hotel__price">От <span class="hotel__price-value">5000</span> ₽</p>
-              <a class="button button-xs button-primary" href="#">Подробнее</a>
-              <button class="button button-xs button-accent" type="button">
-                <span class="button__text">В избранном</span>
-              </button>
-              <div class="stars stars-4">
-                <span class="visually-hidden">4 звезды</span>
+              <div class="card-wrapper">
+                <p class="hotel__type title-block">Гостиница</p>
+                <p class="hotel__price title-block">От <span class="hotel__price-value">5000</span> ₽</p>
               </div>
-              <p class="hotel__rating-value button">Рейтинг: <span>9,2</span></p>
+              <div class="card-wrapper">
+                <a class="card__button button button-xs button-primary" href="#">Подробнее</a>
+                <button class="card__button button button-xs button-accent" type="button">
+                  <span class="button__text">В избранном</span>
+                </button>
+              </div>
+              <div class="card-wrapper stars stars-4">
+                <span class="visually-hidden">4 звезды</span>
+                <p class="hotel__rating-value button title-block">Рейтинг: <span>9,2</span></p>
+              </div>
             </li>
             <li class="hotel">
               <img class="hotel__image" src="images/catalog/mountains-and-blue-sky.jpg" width="300" height="212"
                 alt="Отель Desert Quail Inn - вид на горы и голубое небо">
               <a class="hotel__link title-lg" href="#">
-                <h3 class="hotel__title">Desert Quail Inn</h3>
+                <h3 class="hotel__title title-block">Desert Quail Inn</h3>
               </a>
-              <p class="hotel__type">Гостиница</p>
-              <p class="hotel__price">От <span class="hotel__price-value">2500</span> ₽</p>
-              <a class="button button-xs button-primary" href="#">Подробнее</a>
-              <button class="button button-xs bg-secondary" type="button">
-                <span class="button__text">В избранное</span>
-              </button>
-              <div class="stars stars-3">
-                <span class="visually-hidden">3 звезды</span>
+              <div class="card-wrapper">
+                <p class="hotel__type title-block">Гостиница</p>
+                <p class="hotel__price title-block">От <span class="hotel__price-value">2500</span> ₽</p>
               </div>
-              <p class="hotel__rating-value button">Рейтинг: <span>6,9</span></p>
+              <div class="card-wrapper">
+                <a class="card__button button button-xs button-primary" href="#">Подробнее</a>
+                <button class="card__button button button-xs bg-secondary" type="button">
+                  <span class="button__text">В избранное</span>
+                </button>
+              </div>
+              <div class="card-wrapper stars stars-3">
+                <span class="visually-hidden">3 звезды</span>
+                <p class="hotel__rating-value button title-block">Рейтинг: <span>6,9</span></p>
+              </div>
             </li>
             <li class="hotel">
               <img class="hotel__image" src="images/catalog/mountains-at-night.jpg" width="300" height="212"
                 alt="Отель GreenTree Inn - вид на горы ночью">
               <a class="hotel__link title-lg" href="#">
-                <h3 class="hotel__title">GreenTree Inn</h3>
+                <h3 class="hotel__title title-block">GreenTree Inn</h3>
               </a>
-              <p class="hotel__type">Гостиница</p>
-              <p class="hotel__price">От <span class="hotel__price-value">1500</span> ₽</p>
-              <a class="button button-xs button-primary" href="#">Подробнее</a>
-              <button class="button button-xs bg-secondary" type="button">
-                <span class="button__text">В избранное</span>
-              </button>
-              <div class="stars stars-2">
-                <span class="visually-hidden">2 звезды</span>
+              <div class="card-wrapper">
+                <p class="hotel__type title-block">Гостиница</p>
+                <p class="hotel__price title-block">От <span class="hotel__price-value">1500</span> ₽</p>
               </div>
-              <p class="hotel__rating-value button">Рейтинг: <span>5,0</span></p>
+              <div class="card-wrapper">
+                <a class="card__button button button-xs button-primary" href="#">Подробнее</a>
+                <button class="card__button button button-xs bg-secondary" type="button">
+                  <span class="button__text">В избранное</span>
+                </button>
+              </div>
+              <div class="card-wrapper stars stars-2">
+                <span class="visually-hidden">2 звезды</span>
+                <p class="hotel__rating-value button title-block">Рейтинг: <span>5,0</span></p>
+              </div>
             </li>
           </ul>
 
           <div class="pagination">
             <ul class="pagination__list list-unstyled">
               <li class="pagination__item">
-                <a class="button-sm button pagination__link-current" href="#">1</a>
+                <a class="button-xxs button-sm button pagination__link-current" href="#">1</a>
               </li>
               <li class="pagination__item">
-                <a class="button-sm button bg-secondary" href="#">2</a>
+                <a class="button-xxs button-sm button bg-secondary" href="#">2</a>
               </li>
               <li class="pagination__item">
-                <a class="button-sm button bg-secondary" href="#">3</a>
+                <a class="button-xxs button-sm button bg-secondary" href="#">3</a>
               </li>
               <li class="pagination__item">
-                <a class="button-sm button bg-secondary" href="#">4</a>
+                <a class="button-xxs button-sm button bg-secondary" href="#">4</a>
               </li>
               <li class="pagination__item">
-                <span class="pagination__ellipsis button-sm button">...</span>
+                <span class="button-xxs pagination__ellipsis button-sm button">...</span>
               </li>
               <li class="pagination__item">
-                <a class="button-sm button bg-secondary" href="#">10</a>
+                <a class="button-xxs button-sm button bg-secondary" href="#">10</a>
               </li>
             </ul>
           </div>
         </section>
 
-        <section class="subscribe__inner">
-          <h2 class="subscribe__title subscribe__title-inner title-xl">Подпишитесь на рассылку</h2>
-          <p class="subscribe__text text-lead">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
+        <section class="subscribe subscribe__inner">
+          <h2 class="subscribe__title subscribe__title-inner title-xl title-block">Подпишитесь на рассылку</h2>
+          <p class="subscribe__text text-lead text-secondary title-block">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
 
           <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="subscribe-email">Email</label>
             <input class="subscribe__input" type="email" id="subscribe-email" name="email" placeholder="Ваш e-mail"
               required>
-            <button class="button button-sm bg-secondary" type="submit">Подписаться</button>
+            <button class="subscribe__button button button-sm bg-secondary" type="submit">Подписаться</button>
           </form>
         </section>
       </main>
@@ -302,7 +318,7 @@
         <a class="footer__phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
 
         <a class="footer__copyright" href="https://htmlacademy.ru/">
-          <img class="footer__logo" src="#" width="115" height="33" alt="HTML Academy">
+          <img class="footer__logo" src="#">
         </a>
       </footer>
     </div>
