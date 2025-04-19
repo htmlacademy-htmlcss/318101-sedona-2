@@ -260,14 +260,12 @@ body {
   object-fit: contain;
 }
 
-.section-wrapper {
+.column-wrapper {
   display: flex;
   flex-direction: column;
 }
 
 .titles__advantages {
-  display: flex;
-  flex-direction: column;
   gap: 25px;
   padding-block: 69px;
 }
@@ -280,14 +278,7 @@ body {
 
 .advantages__item,
 .services__item {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  gap: 30px;
-  width: 400px;
-  flex-grow: 1;
   padding: 103px 85px;
-  box-sizing: border-box;
 }
 
 .advantages__item-highlight {
@@ -298,13 +289,15 @@ body {
   display: contents;
 }
 
-.advantages__content {
+.items__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   gap: 30px;
   width: 400px;
+  box-sizing: border-box;
+  flex-grow: 1;
 }
 
 .advantages__image {
@@ -314,8 +307,6 @@ body {
 }
 
 .services__titles {
-  display: flex;
-  flex-direction: column;
   gap: 20px;
   padding-block: 64px;
 }
@@ -386,8 +377,6 @@ body {
 }
 
 .page-header {
-  display: flex;
-  flex-direction: column;
   gap: 8px;
 }
 
@@ -418,8 +407,6 @@ body {
 }
 
 .catalog {
-  display: flex;
-  flex-direction: column;
   padding: 50px 70px 60px 70px;
   gap: 40px;
 }
@@ -440,8 +427,6 @@ body {
 }
 
 .filter__group {
-  display: flex;
-  flex-direction: column;
   border: none;
 }
 
@@ -466,8 +451,6 @@ body {
 }
 
 .filter__buttons {
-  display: flex;
-  flex-direction: column;
   justify-content: flex-end;
   gap: 32px;
 }
