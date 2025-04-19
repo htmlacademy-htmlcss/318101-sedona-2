@@ -286,6 +286,8 @@ body {
   gap: 30px;
   width: 400px;
   flex-grow: 1;
+  padding: 103px 85px;
+  box-sizing: border-box;
 }
 
 .advantages__item-highlight {
@@ -294,7 +296,6 @@ body {
 
 .content__img {
   display: contents;
-
 }
 
 .advantages__content {
