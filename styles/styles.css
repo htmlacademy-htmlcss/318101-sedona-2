@@ -286,7 +286,7 @@ body {
 
 .advantages__item,
 .services__item {
-  padding: 103px 85px;
+  padding-block: 80px;
 }
 
 .advantages__item-highlight {
@@ -320,6 +320,44 @@ body {
   flex-direction: column;
   gap: 20px;
   padding-block: 64px;
+}
+
+.services__item-title::before {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  width: 75px;
+  height: 72px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.service__item-house::before {
+background-image: url("../images/house.svg");
+}
+
+.services__item-food::before {
+background-image: url("../images/food.svg");
+}
+
+.service__item-souvenirs::before {
+background-image: url("../images/souvenirs.svg");
+}
+
+.item-title::after {
+  content: "";
+  display: block;
+  margin-inline: auto;
+  margin-top: 30px;
+  width: 60px;
+  height: 2px;
+  background-color: var(--color-black-30);
+}
+
+.highlight__item-title::after {
+  background-color: var(--color-white-30);
 }
 
 .search {
