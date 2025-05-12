@@ -503,6 +503,7 @@ body {
 
 .social {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -751,12 +752,6 @@ body {
   border-radius: 0 4px 4px 0;
 }
 
-.range__label {
-}
-
-.range__text {
-}
-
 .filter__buttons {
   display: flex;
   justify-content: center;
@@ -865,7 +860,11 @@ body {
   text-align: center;
   text-transform: uppercase;
   background-color: var(--color-pale-gray);
-  margin: 0;
+  margin-inline: auto 0;
+}
+
+.stars {
+  position: relative;
 }
 
 .pagination__list {
