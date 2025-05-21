@@ -52,7 +52,7 @@
               </a>
             </li>
             <li class="nav__item">
-              <a class="button header__button button-xs button-primary" href="#">Хочу сюда</a>
+              <a class="button header__button button-xs button-primary" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -109,7 +109,7 @@
             </fieldset>
 
             <fieldset class="filter__group column-wrapper">
-              <legend class="filter__title title-sm">Тип жилья:</legend>
+              <legend class="filter__title title-sm">Тип Жилья:</legend>
               <ul class="filter__list list-unstyled">
                 <li class="filter__item">
                   <label class="control">
@@ -134,24 +134,33 @@
               </ul>
             </fieldset>
 
-            <fieldset class="filter__group column-wrapper">
+            <fieldset class="filter__group column-wrapper filter__group-price">
               <legend class="filter__title title-sm">Стоимость, ₽:</legend>
               <div class="range">
                 <div class="range__inputs">
                   <label class="range__label">
-                    <span class="range__text">от</span>
+                    <span class="visually-hidden">минимальная цена</span>
                     <input class="range__input range__input-from" type="number" value="0" name="min-price"
                       placeholder="от">
+                    <span class="range__text">от</span>
                   </label>
                   <label class="range__label">
-                    <span class="range__text">до</span>
+                    <span class="visually-hidden">максимальная цена</span>
                     <input class="range__input range__input-to" type="number" value="9000" name="max-price"
                       placeholder="до">
+                    <span class="range__text">до</span>
                   </label>
                 </div>
                 <div class="range__slider">
-                  <input class="range__slider-input" type="range" min="0" max="12000" step="10" value="0">
-                  <input class="range__slider-input" type="range" min="0" max="12000" step="10" value="9000">
+                  <div class="range-slider__line">
+                    <div class="range-slider__fill"></div>
+                    <button class="range-slider__button range-slider__button--min" type="button">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <button class="range-slider__button range-slider__button--max" type="button">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
+                  </div>
                 </div>
               </div>
             </fieldset>
@@ -177,33 +186,33 @@
 
             <div class="view">
               <ul class="view__list list-unstyled">
-                <li class="view__item view__item-active">
-                  <a class="view__link view__link-tile view__link-active" href="#">
+                <li class="view__item">
+                  <button type="button" class="view__link view__link-tile view__link-active">
                     <svg width="16" height="14" fill="black" aria-hidden="true" focusable="false"
                       xmlns="http://www.w3.org/2000/svg">
-                      <path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"/>
+                      <path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" />
                     </svg>
                     <span class="visually-hidden">Плитка</span>
-                  </a>
+                  </button>
                 </li>
                 <li class="view__item">
-                  <a class="view__link view__link-slide" href="#">
+                  <button type="button" class="view__link view__link-slide" href="#">
                     <svg width="16" height="14" fill="black" aria-hidden="true" focusable="false"
                       xmlns="http://www.w3.org/2000/svg">
-                      <path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z"/>
+                      <path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" />
                     </svg>
                     <span class="visually-hidden">Слайды</span>
-                  </a>
+                  </button>
                 </li>
                 <li class="view__item">
-                  <a class="view__link view__link-list" href="#">
+                  <button type="button" class="view__link view__link-list" href="#">
                     <svg width="16" height="14" fill="black" aria-hidden="true" focusable="false"
                       xmlns="http://www.w3.org/2000/svg">
                       <path
-                        d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z"/>
+                        d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z" />
                     </svg>
                     <span class="visually-hidden">Список</span>
-                  </a>
+                  </button>
                 </li>
               </ul>
             </div>
@@ -226,8 +235,14 @@
                   <span class="button__text">В избранное</span>
                 </button>
               </div>
-              <div class="card-wrapper stars stars-4">
-                <span class="visually-hidden">4 звезды</span>
+              <div class="card-wrapper">
+                <div class="stars stars-4">
+                  <span class="visually-hidden">4 звезды</span>
+                  <span class="star"></span>
+                  <span class="star"></span>
+                  <span class="star"></span>
+                  <span class="star"></span>
+                </div>
                 <p class="hotel__rating-value title-reset">Рейтинг: <span>8,5</span></p>
               </div>
             </li>
@@ -247,8 +262,14 @@
                   <span class="button__text">В избранном</span>
                 </button>
               </div>
-              <div class="card-wrapper stars stars-4">
-                <span class="visually-hidden">4 звезды</span>
+              <div class="card-wrapper">
+                <div class="stars stars-4">
+                  <span class="visually-hidden">4 звезды</span>
+                  <span class="star"></span>
+                  <span class="star"></span>
+                  <span class="star"></span>
+                  <span class="star"></span>
+                </div>
                 <p class="hotel__rating-value title-reset">Рейтинг: <span>9,2</span></p>
               </div>
             </li>
@@ -268,8 +289,13 @@
                   <span class="button__text">В избранное</span>
                 </button>
               </div>
-              <div class="card-wrapper stars stars-3">
-                <span class="visually-hidden">3 звезды</span>
+              <div class="card-wrapper">
+                <div class="stars stars-3">
+                  <span class="visually-hidden">3 звезды</span>
+                  <span class="star"></span>
+                  <span class="star"></span>
+                  <span class="star"></span>
+                </div>
                 <p class="hotel__rating-value title-reset">Рейтинг: <span>6,9</span></p>
               </div>
             </li>
@@ -290,8 +316,10 @@
                 </button>
               </div>
               <div class="card-wrapper">
-                <div class="stars stars-2">
+                <div class="stars stars-2" role="img">
                   <span class="visually-hidden">2 звезды</span>
+                  <span class="star"></span>
+                  <span class="star"></span>
                 </div>
                 <p class="hotel__rating-value title-reset">Рейтинг: <span>5,0</span></p>
               </div>
@@ -407,7 +435,7 @@
           </svg>
           <span class="visually-hidden">Логотип htmlacademy</span>
         </a>
-        </footer>
+      </footer>
     </div>
   </body>
 
