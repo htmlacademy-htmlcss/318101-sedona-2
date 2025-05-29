@@ -324,6 +324,10 @@ body {
   background-image: url("../images/souvenirs.svg");
 }
 
+.item-title {
+  position: relative;
+}
+
 .item-title::after {
   content: "";
   position: absolute;
