@@ -143,7 +143,7 @@
           <p class="search__text text-lead text-secondary">Укажите предполагаемые даты поездки,<br>и мы покажем вам
             лучшие предложения гостиниц в Седоне</p>
           <a class="search__button button button-sm button-primary" aria-controls="modal" aria-expanded="false"
-            aria-haspopup="dialog">Поиск гостиницы в Седоне</a>
+            aria-haspopup="dialog" href="#">Поиск гостиницы в Седоне</a>
         </section>
 
         <section class="subscribe__main subscribe bg-secondary">
@@ -236,7 +236,7 @@
       <div class="modal">
         <div class="modal__container">
           <h2 class="modal__title title-xl">Поиск гостиницы в Седоне</h2>
-          <button class="modal__button-close" type="button" popovertargetaction="hide">
+          <button class="modal__button-close" type="button">
             <span class="visually-hidden">Закрыть окно</span>
             <svg width="21" height="20" viewBox="0 0 21 20" fill="black" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -271,7 +271,7 @@
                       <path d="M3 9V11H17V9H3Z" />
                     </svg>
                   </button>
-                  <input class="modal__input counter__input" type="number" name="adults" value="2">
+                  <input class="modal__input counter__input" type="number" name="adults" value="2" id="adults">
                   <button class="counter__button counter__button-plus" type="button">
                     <span class="visually-hidden">Добавить</span>
                     <svg class="button__plus-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
@@ -303,7 +303,7 @@
                       <path d="M3 9V11H17V9H3Z" />
                     </svg>
                   </button>
-                  <input class="modal__input counter__input" type="number" name="adults" value="2">
+                  <input class="modal__input counter__input" type="number" name="childs" value="2" id="childs">
                   <button class="counter__button counter__button-plus" type="button">
                     <span class="visually-hidden">Добавить</span>
                     <svg class="button__plus-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
