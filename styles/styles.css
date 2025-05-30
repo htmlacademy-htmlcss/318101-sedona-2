@@ -342,7 +342,8 @@ body {
   align-items: center;
   padding: 51px 0 82px;
   background-color: var(--color-blue-30);
-  background-image: url("../images/divider.svg"), url("../images/index-hero.jpg");
+  background-image: url("../images/divider.svg"),
+    url("../images/index-hero.jpg");
   background-position: bottom, center;
   background-repeat: no-repeat;
   background-size: 100% auto, cover;
@@ -1061,9 +1062,9 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.modal-hidden {
+/* .modal-hidden {
   display: none;
-}
+} */
 
 .modal__container {
   position: relative;
@@ -1172,6 +1173,11 @@ body {
   padding: 0;
   border-radius: 4px;
   background-color: var(--color-pale-gray);
+}
+
+.counter-field__info {
+  display: flex;
+  gap: 10px;
 }
 
 .counter__button {
