@@ -1062,9 +1062,9 @@ body {
   transform: translate(-50%, -50%);
 }
 
-/* .modal-hidden {
+.modal-hidden {
   display: none;
-} */
+}
 
 .modal__container {
   position: relative;
