@@ -368,7 +368,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 51px 0 82px;
-  background-color: var(--color-blue-30);
+  background-color: var(--color-blue-gray);
   background-image: url("../images/divider.svg"),
     url("../images/index-hero.jpg");
   background-position: bottom, center;
@@ -388,7 +388,7 @@ body {
   padding: 35px 70px;
   gap: 40px;
   color: var(--color-white);
-  background-color: var(--color-blue-30);
+  background-color: var(--color-blue-gray);
   background-image: url("../images/catalog-hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -425,6 +425,7 @@ body {
 
 .content__img {
   margin: 0;
+  background-color: var(--color-blue-gray);
 }
 
 .items__wrapper {
@@ -538,6 +539,8 @@ body {
 
 .subscribe__main {
   background-image: url("../images/subscribe.jpg");
+  background-color: var(--color-blue-gray);
+  color: var(--color-white);
   background-size: cover;
   background-repeat: no-repeat;
 }
